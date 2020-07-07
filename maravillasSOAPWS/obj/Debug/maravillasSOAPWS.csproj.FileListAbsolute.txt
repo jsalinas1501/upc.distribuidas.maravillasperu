@@ -1,0 +1,7 @@
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasSOAPWS\bin\maravillasSOAPWS.dll.config
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasSOAPWS\bin\maravillasSOAPWS.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasSOAPWS\bin\maravillasSOAPWS.pdb
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasSOAPWS\obj\Debug\maravillasSOAPWS.csprojAssemblyReference.cache
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasSOAPWS\obj\Debug\maravillasSOAPWS.csproj.CoreCompileInputs.cache
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasSOAPWS\obj\Debug\maravillasSOAPWS.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasSOAPWS\obj\Debug\maravillasSOAPWS.pdb

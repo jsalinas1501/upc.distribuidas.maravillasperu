@@ -1,0 +1,64 @@
+﻿@model proyectoMaravillasPeru.Dominio.Reserva
+@{
+    ViewBag.Title = "Delete";
+}
+<h2>@ViewData["Message"]</h2>
+<h3>¿Está seguro de ELIMINAR esta reserva?</h3>
+<div>
+    <h4>Reserva</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @ViewBag.Titulo1
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.codigoreserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo2
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.codigociudadorigen)
+        </dd>
+        <dt>
+            @ViewBag.Titulo3
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.codigociudaddestino)
+        </dd>
+        <dt>
+            @ViewBag.Titulo4
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tiporeserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo5
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.inicioreserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo6
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.finreserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo7
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Retorno a la Lista", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,58 @@
+﻿@model proyectoMaravillasPeru.Dominio.Reserva
+@{
+    ViewBag.Title = "Details";
+}
+<h2>@ViewData["Message"]</h2>
+
+<div>
+    <h4>Reserva</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @ViewBag.Titulo1
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.codigoreserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo2
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.codigociudadorigen)
+        </dd>
+        <dt>
+            @ViewBag.Titulo3
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.codigociudaddestino)
+        </dd>
+        <dt>
+            @ViewBag.Titulo4
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tiporeserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo5
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.inicioreserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo6
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.finreserva)
+        </dd>
+        <dt>
+            @ViewBag.Titulo7
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.codigoreserva.Trim() }) |
+    @Html.ActionLink("Regreso a la lista", "Index")
+</p>

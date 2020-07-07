@@ -1,0 +1,79 @@
+﻿@model IEnumerable<proyectoMaravillasPeru.Dominio.Reservas>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>@ViewData["Message"]</h2>
+
+<p>
+    @Html.ActionLink("Nueva reserva", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @ViewBag.Titulo01
+        </th>
+        <th>
+            @ViewBag.Titulo02
+        </th>
+        <th>
+            @ViewBag.Titulo03
+        </th>
+        <th>
+            @ViewBag.Titulo04
+        </th>
+        <th>
+            @ViewBag.Titulo05
+        </th>
+        <th>
+            @ViewBag.Titulo06
+        </th>
+        <th>
+            @ViewBag.Titulo07
+        </th>
+        <th>
+            @ViewBag.Titulo08
+        </th>
+        <th>
+            @ViewBag.Titulo09
+        </th>
+
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigoreserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigociudadorigen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcionciudadorigen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigociudaddestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcionciudaddestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tiporeserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.inicioreserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.finreserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id1 = item.codigoreserva }) |
+                @Html.ActionLink("Detalle", "Details", new { id = item.codigoreserva.Trim() }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.codigoreserva.Trim() })
+            </td>
+        </tr>
+    }
+</table>

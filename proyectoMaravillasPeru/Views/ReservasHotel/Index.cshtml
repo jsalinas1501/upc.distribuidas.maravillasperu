@@ -1,0 +1,69 @@
+﻿@model IEnumerable<proyectoMaravillasPeru.MaravillasSOAPWS.ReservaHotel>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>@ViewData["Message"]</h2>
+
+<p>
+    @Html.ActionLink("Nueva reserva de hotel", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @ViewBag.Titulo1
+        </th>
+        <th>
+            @ViewBag.Titulo2
+        </th>
+        <th>
+            @ViewBag.Titulo3
+        </th>
+        <th>
+            @ViewBag.Titulo4
+        </th>
+        <th>
+            @ViewBag.Titulo5
+        </th>
+        <th>
+            @ViewBag.Titulo6
+        </th>
+        <th>
+            @ViewBag.Titulo7
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Codigoreservahotel)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Nombrehotel)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Numerodias)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Cantidadpersonas)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Numerohabitaciones)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Montototal)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Fechaingreso)
+    </td>
+    <td>
+        @Html.ActionLink("Editar", "Edit", new
+   {
+       id = item.Codigoreservahotel.Trim()
+   }) |
+        @Html.ActionLink("Detalle", "Details", new { id = item.Codigoreservahotel.Trim() }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = item.Codigoreservahotel.Trim() })
+    </td>
+</tr>
+    }
+</table>

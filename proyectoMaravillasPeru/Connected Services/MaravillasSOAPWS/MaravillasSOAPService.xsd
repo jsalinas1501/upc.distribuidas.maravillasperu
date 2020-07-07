@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50954/MaravillasSOAPService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/maravillasSOAPWS.Dominio" />
+  <xs:element name="CrearReservaHotel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/maravillasSOAPWS.Dominio" minOccurs="0" name="reservaHotelACrear" nillable="true" type="q1:ReservaHotel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearReservaHotelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/maravillasSOAPWS.Dominio" minOccurs="0" name="CrearReservaHotelResult" nillable="true" type="q2:ReservaHotel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerReservaHotel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerReservaHotelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/maravillasSOAPWS.Dominio" minOccurs="0" name="ObtenerReservaHotelResult" nillable="true" type="q3:ReservaHotel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarReservaHotel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/maravillasSOAPWS.Dominio" minOccurs="0" name="reservaHotelAModificar" nillable="true" type="q4:ReservaHotel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarReservaHotelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/maravillasSOAPWS.Dominio" minOccurs="0" name="ModificarReservaHotelResult" nillable="true" type="q5:ReservaHotel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarReservaHotel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarReservaHotelResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarReservaHotel">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarReservaHotelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/maravillasSOAPWS.Dominio" minOccurs="0" name="ListarReservaHotelResult" nillable="true" type="q6:ArrayOfReservaHotel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

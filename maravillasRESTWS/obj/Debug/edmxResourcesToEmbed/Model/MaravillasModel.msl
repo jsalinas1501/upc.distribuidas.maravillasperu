@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="maravillasModelStoreContainer" CdmEntityContainer="maravillasEntities1">
+    <EntitySetMapping Name="ciudads">
+      <EntityTypeMapping TypeName="maravillasModel.ciudad">
+        <MappingFragment StoreEntitySet="ciudad">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="codigociudad" ColumnName="codigociudad" />
+          <ScalarProperty Name="descripcionciudad" ColumnName="descripcionciudad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="reservas">
+      <EntityTypeMapping TypeName="maravillasModel.reserva">
+        <MappingFragment StoreEntitySet="reserva">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="codigoreserva" ColumnName="codigoreserva" />
+          <ScalarProperty Name="codigociudadorigen" ColumnName="codigociudadorigen" />
+          <ScalarProperty Name="codigociudaddestino" ColumnName="codigociudaddestino" />
+          <ScalarProperty Name="tiporeserva" ColumnName="tiporeserva" />
+          <ScalarProperty Name="inicioreserva" ColumnName="inicioreserva" />
+          <ScalarProperty Name="finreserva" ColumnName="finreserva" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

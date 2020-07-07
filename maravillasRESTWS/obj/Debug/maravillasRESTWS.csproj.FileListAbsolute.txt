@@ -1,0 +1,12 @@
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\bin\maravillasRESTWS.dll.config
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\bin\maravillasRESTWS.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\bin\maravillasRESTWS.pdb
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\bin\EntityFramework.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\bin\EntityFramework.SqlServer.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\bin\EntityFramework.xml
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\bin\EntityFramework.SqlServer.xml
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\obj\Debug\maravillasRESTWS.csprojAssemblyReference.cache
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\obj\Debug\maravillasRESTWS.csproj.CoreCompileInputs.cache
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\obj\Debug\maravillasRESTWS.csproj.CopyComplete
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\obj\Debug\maravillasRESTWS.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\maravillasRESTWS\obj\Debug\maravillasRESTWS.pdb
