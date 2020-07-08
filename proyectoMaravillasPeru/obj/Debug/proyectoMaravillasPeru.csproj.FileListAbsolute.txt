@@ -84,3 +84,7 @@ D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMar
 D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\proyectoMaravillasPeru\obj\Debug\proyectoMaravillasPeru.csproj.CopyComplete
 D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\proyectoMaravillasPeru\obj\Debug\proyectoMaravillasPeru.dll
 D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\proyectoMaravillasPeru\obj\Debug\proyectoMaravillasPeru.pdb
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\proyectoMaravillasPeru\bin\EntityFramework.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\proyectoMaravillasPeru\bin\EntityFramework.SqlServer.dll
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\proyectoMaravillasPeru\bin\EntityFramework.xml
+D:\jsalinas\UPC\2020-1\Sistemas distribuidos\proyecto\MaravillasPeru\proyectoMaravillasPeru\proyectoMaravillasPeru\bin\EntityFramework.SqlServer.xml

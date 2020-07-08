@@ -1,0 +1,94 @@
+﻿@model proyectoMaravillasPeru.Models.Usuario
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Usuario</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.dniUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.dniUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.dniUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.nombreUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.nombreUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.nombreUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.apellidoUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.apellidoUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.apellidoUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.correoUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.correoUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.correoUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.generoUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.generoUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.generoUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.contraseñaUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.contraseñaUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.contraseñaUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.fechNacimientoUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.fechNacimientoUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.fechNacimientoUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.pais, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.pais, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.pais, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Volver a la lista", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

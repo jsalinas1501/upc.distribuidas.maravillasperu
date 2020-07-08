@@ -45,11 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -130,10 +137,29 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReservasController.cs" />
     <Compile Include="Controllers\ReservasHotelController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Dominio\Reserva.cs" />
     <Compile Include="Dominio\Reservas.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Usuario.cs">
+      <DependentUpon>UsuarioModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsuarioModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuarioModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsuarioModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuarioModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsuarioModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuarioModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -156,6 +182,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\UsuarioModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UsuarioModel.Context.cs</LastGenOutput>
+      <DependentUpon>UsuarioModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\UsuarioModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UsuarioModel.edmx</DependentUpon>
+      <LastGenOutput>UsuarioModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Connected Services\MaravillasSOAPWS\MaravillasSOAPService.wsdl" />
@@ -168,6 +204,13 @@
     <None Include="Connected Services\MaravillasSOAPWS\MaravillasSOAPService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <EntityDeploy Include="Models\UsuarioModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UsuarioModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\UsuarioModel.edmx.diagram">
+      <DependentUpon>UsuarioModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -203,10 +246,14 @@
     <Content Include="Views\ReservasHotel\Edit.cshtml" />
     <Content Include="Views\ReservasHotel\Create.cshtml" />
     <Content Include="Views\ReservasHotel\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Usuarios\Details.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Usuarios\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -226,6 +273,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\MaravillasSOAPWS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

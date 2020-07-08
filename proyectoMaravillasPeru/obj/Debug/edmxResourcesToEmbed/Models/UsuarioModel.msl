@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="maravillasModelStoreContainer" CdmEntityContainer="maravillasEntities">
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="maravillasModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dniUsuario" ColumnName="dniUsuario" />
+          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="apellidoUsuario" ColumnName="apellidoUsuario" />
+          <ScalarProperty Name="correoUsuario" ColumnName="correoUsuario" />
+          <ScalarProperty Name="generoUsuario" ColumnName="generoUsuario" />
+          <ScalarProperty Name="contraseñaUsuario" ColumnName="contraseñaUsuario" />
+          <ScalarProperty Name="fechNacimientoUsuario" ColumnName="fechNacimientoUsuario" />
+          <ScalarProperty Name="pais" ColumnName="pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

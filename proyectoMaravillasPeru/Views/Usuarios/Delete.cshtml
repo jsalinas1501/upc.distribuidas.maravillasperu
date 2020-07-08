@@ -1,0 +1,88 @@
+﻿@model proyectoMaravillasPeru.Models.Usuario
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>¿Estás segura/o de querer borrar el usuario?</h3>
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dniUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dniUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.generoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.generoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contraseñaUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contraseñaUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechNacimientoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechNacimientoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pais)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>

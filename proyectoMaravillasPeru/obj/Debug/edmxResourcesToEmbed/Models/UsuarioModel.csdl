@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="maravillasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dniUsuario" Type="Int32" Nullable="false" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="apellidoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="correoUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="generoUsuario" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="contraseñaUsuario" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="fechNacimientoUsuario" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="pais" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="maravillasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+  </EntityContainer>
+</Schema>

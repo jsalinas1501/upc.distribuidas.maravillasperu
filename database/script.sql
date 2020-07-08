@@ -187,3 +187,30 @@ CREATE TABLE [dbo].[reservahotel](
 ) ON [PRIMARY]
 GO
 
+USE [maravillas]
+GO
+
+/****** Object:  Table [dbo].[Usuario]    Script Date: 7/07/2020 21:24:59 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Usuario](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[dniUsuario] [int] NOT NULL,
+	[nombreUsuario] [nvarchar](50) NOT NULL,
+	[apellidoUsuario] [nvarchar](50) NOT NULL,
+	[correoUsuario] [nvarchar](50) NOT NULL,
+	[generoUsuario] [nchar](10) NOT NULL,
+	[contraseñaUsuario] [nchar](10) NOT NULL,
+	[fechNacimientoUsuario] [datetime] NOT NULL,
+	[pais] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
